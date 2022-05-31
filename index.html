@@ -231,8 +231,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://facebook.com/jedgarf" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                     <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-                    <li><a href="https://www.linkedin.com/in/jedgarf"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://github.com/jedgarf"><i class="fa fa-github-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jedgarf" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://github.com/jedgarf" target="_blank"><i class="fa fa-github-square"></i></a></li>
                 </ul>
             </div>
 
@@ -517,10 +517,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-12" style="text-align: left;">
+                        <div class="col-md-6 col-sm-12" style="text-align: left; margin-top: -15px;">
                             <h4 style="font-weight: bolder;">PHP Programmer JG1</h4>
                         </div>
-                        <div class="col-md-6 col-sm-12" style="text-align: right;">
+                        <div class="col-md-6 col-sm-12" style="text-align: right; margin-top: -15px;">
                             <p>November 2022 - April 2022</p>
                         </div>
                     </div>
@@ -687,7 +687,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12" style="text-align: left;">
-                            <h5><a href="https://neust.edu.ph/" target="_blank" style="font-weight: bolder !important;">Nueva Ecija University of Science and Technology</a> - Gapan City, Nueva Ecija</h5>
+                            <h5><a href="https://neust.edu.ph/" target="_blank" style="font-weight: bolder !important;">Nueva Ecija University of Science and Technology</a> - Nueva Ecija</h5>
                         </div>
                         <div class="col-md-12 col-sm-12" style="text-align: left;">
                             <p>Specialization in <b>Database Applications Programming</b></p>
@@ -806,7 +806,7 @@
                 <div class="col-md-8 col-sm-8">
 
                     <!-- CONTACT FORM HERE -->
-                    <form id="contact-form" role="form" action="#" method="post">
+                    <form id="contact-form" role="form" action="#" method="post" onsubmit="submitMessage(event, $(this))">
                         <div class="col-md-12 col-sm-12">
                             <input type="text" class="form-control" placeholder="Full Name" id="cf-name" name="cf-name" required="">
                         </div>
@@ -819,18 +819,6 @@
                             <input type="email" class="form-control" placeholder="Your Email" id="cf-email" name="cf-email" required="">
                         </div>
 
-                        <!-- <div class="col-md-6 col-sm-6">
-                            <select class="form-control" id="cf-budgets" name="cf-budgets">
-                                        <option>Budget Level</option>
-                                        <option>$500 to $1,000</option>
-                                        <option>$1,000 to $2,200</option>
-                                        <option>$2,200 to $4,500</option>
-                                        <option>$4,500 to $7,500</option>
-                                        <option>$7,500 to $12,000</option>
-                                        <option>$12,000 or more</option>
-                                   </select>
-                        </div> -->
-
                         <div class="col-md-12 col-sm-12">
                             <textarea class="form-control" rows="6" placeholder="Your Message" id="cf-message" name="cf-message" required=""></textarea>
                         </div>
@@ -842,16 +830,32 @@
                     </form>
                 </div>
 
-                <div class="col-md-4 col-sm-4">
-                    <div class="google-map">
-                        <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" allowfullscreen hidden></iframe>
+                <div class="col-md-4 col-sm-4" style="color: blanchedalmond; text-align: left;">
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <big style="font-weight: bolder;">Contact Details:</big><br>
+                            <p style="color: blanchedalmond;"><b>Personal Email:</b> jedgarf.dev12@gmail.com<br>
+                            <b>Company Email:</b> jfrancisco@wesupportinc.com</p>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="https://facebook.com/jedgarf" target="_blank" style="color: #4267B2;" title="https://facebook.com/jedgarf"><i class="fa fa-facebook-square fa-5x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="https://www.linkedin.com/in/jedgarf" target="_blank" style="color: #0072b1;" title="https://www.linkedin.com/in/jedgarf"><i class="fa fa-linkedin-square fa-5x"></i></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="https://github.com/jedgarf" target="_blank" style="color: #df4759;" title="https://github.com/jedgarf"><i class="fa fa-github-square fa-5x"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
@@ -863,43 +867,6 @@
     <footer data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
-
-                <!-- <div class="col-md-5 col-sm-12" hidden>
-                    <div class="footer-thumb footer-info">
-                        <h2>Hydro Company</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4" hidden>
-                    <div class="footer-thumb">
-                        <h2>Company</h2>
-                        <ul class="footer-link">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Join our team</a></li>
-                            <li><a href="#">Read Blog</a></li>
-                            <li><a href="#">Press</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4" hidden>
-                    <div class="footer-thumb">
-                        <h2>Services</h2>
-                        <ul class="footer-link">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4" hidden>
-                    <div class="footer-thumb">
-                        <h2>Find us</h2>
-                        <p>123 Grand Rama IX, <br> Krung Thep Maha Nakhon 10400</p>
-                    </div>
-                </div> -->
 
                 <div class="col-md-12 col-sm-12">
                     <div class="footer-bottom">
@@ -953,6 +920,14 @@
             fadeOut: true,
             loop: true
         });
+
+        function submitMessage(evt, form) {
+            
+            evt.preventDefault();
+            // console.log(form.serialize());
+            alert("NOT AVAILABLE RIGHT NOW.");
+
+        }
     </script>
 
 </body>
